@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U MATTER | Meditation App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <div id="loader" class="loader">
+      <img src="./image/Spinner@1x-1.0s-200px-200px.gif" alt="" />
+    </div>
+
+    <nav class="top-navbar">
+      <div class="top-navbar">
+        <div class="logo">
+          <img src="./image/logo.svg" alt="top-logo" />
+        </div>
+        <div class="navbar-right">
+          <a href="./form/signupform.html"
+            ><button class="signup-btn">Sign Up</button></a
+          >
+          <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside>
+      <div class="side-navbar" id="sideNavbar">
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="nav-link active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link"><i class="fas fa-music"></i> Music</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link"
+              ><i class="fas fa-mountain"></i> Scene</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link"
+              ><i class="fas fa-heartbeat"></i> Relax & Breathe</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link"
+              ><i class="fas fa-comments"></i> Talk To Hope</a
+            >
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <div class="content home">
+        <div class="glass-card">
+          <div class="card-text">
+            <h1>
+              <span id="greeting"></span>
+              <span id="name" contenteditable="true"></span>
+            </h1>
+            <h2 class="typing">You're Awesome</h2>
+          </div>
+          <div class="home-card-img">
+            <img src="./image/home-image.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button">
+              What is U Matter? <span class="arrow">&#9662;</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                <strong>U Matter</strong> is a meditation and mental wellness
+                application designed to help users relax and find inner peace
+                through guided meditation, music, and breathing exercises.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-button">
+              How can we help you? <span class="arrow">&#9662;</span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We offer a variety of resources such as guided meditation, music
+                for relaxation, breathing exercises, and a community forum to
+                support your mental health journey.
+              </p>
+            </div>
+          </div>
+          <button id="modal-Button">See More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal-container">
+        <div class="modal">
+          <div class="card-modal card home-card-modal" id="music-modal">
+            <div class="modal-text">
+              <h2>Music</h2>
+              <p>Music to help you focus and relax.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+          <div class="card-modal card home-card-modal" id="scene-modal">
+            <div class="modal-text">
+              <h2>Scene</h2>
+              <p>Nature scenes with sounds to enjoy while relaxing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+          <div class="card-modal card home-card-modal" id="breathe-modal">
+            <div class="modal-text">
+              <h2>Breathing exercises</h2>
+              <p>Guides you through the breathing exercise.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+          <div class="card-modal card home-card-modal" id="ai-modal">
+            <div class="modal-text">
+              <h2>Talk to hope</h2>
+              <p>A voice assistant that always here to talk and to listen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="fas fa-times close-btn"></i>
+    </div>
+
+    <nav class="mobile-b-nav">
+      <ul class="mobile-b-nav-links">
+        <a class="mobile-b-nav-link" href="/">
+          <i class="fas fa-home mobile-b-icon mobile-b-active"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="/music">
+          <i class="fas fa-music mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="/scene">
+          <i class="fas fa-mountain mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="/relax">
+          <i class="fas fa-heartbeat mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="/hope">
+          <i class="fas fa-comments mobile-b-icon"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <script src="home.js"></script>
+  </body>
+</html>
