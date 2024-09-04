@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U Matter | MUSIC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../commonPart/navbar.css" />
+    <link rel="stylesheet" href="music.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <img src="../HomePage/image/Spinner@1x-1.0s-200px-200px.gif" alt="" />
+    </div>
+
+    <nav class="top-navbar">
+      <div class="top-navbar">
+        <div class="logo">
+          <img src="../HomePage/image/logo.svg" alt="top-logo" />
+        </div>
+        <div class="navbar-right">
+          <a href="./form/signupform.html">
+            <button class="signup-btn">Sign Up</button>
+          </a>
+          <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside>
+      <div class="side-navbar" id="sideNavbar">
+        <ul class="nav-links">
+          <li>
+            <a href="../HomePage/index.html" class="nav-link active">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">
+              <i class="fas fa-music"></i> Music
+            </a>
+          </li>
+          <li>
+            <a href="../ScenePage/index.html" class="nav-link">
+              <i class="fas fa-mountain"></i> Scene
+            </a>
+          </li>
+          <li>
+            <a href="../RelaxPage/index.html" class="nav-link">
+              <i class="fas fa-heartbeat"></i> Relax & Breathe
+            </a>
+          </li>
+          <li>
+            <a href="../TalkPage/index.html" class="nav-link">
+              <i class="fas fa-comments"></i> Talk To Hope
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <div id="music-section">
+        <div class="music-app">
+          <h1 class="app-title">Music</h1>
+          <div class="dropdown">
+            <button class="dropdown-button">
+              All <span class="arrow">&#9662;</span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#" onclick="filterSongs('all')">All</a>
+              <a href="#" onclick="filterSongs('nature-instrument')"
+                >Nature and Instrument</a
+              >
+              <a href="#" onclick="filterSongs('classical-music')"
+                >Classical Music</a
+              >
+              <a href="#" onclick="filterSongs('instrumental')">Instrumental</a>
+              <a href="#" onclick="filterSongs('lofi')">Lofi</a>
+              <a href="#" onclick="filterSongs('motivating')">Motivating</a>
+            </div>
+          </div>
+        </div>
+        <div id="gallery" class="gallery">
+          <div class="music-box">
+            <audio class="song">
+              <source src="./music-folder/Healing Water.mp3" />
+            </audio>
+
+            <!-- instrumental, nature instrument, and motivating -->
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-instument"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Healing Water.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2F0ZXJ8ZW58MHx8MHx8fDA%3D"
+                  alt="Healing Water"
+                />
+              </div>
+              <div class="music-title">
+                <span>Healing Water</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Aakash Gandhi - Kiss the Sky.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2t5fGVufDB8fDB8fHww"
+                  alt="Kiss the Sky"
+                />
+              </div>
+              <div class="music-title">
+                <span>Kiss the Sky</span><br />
+                <span class="artist">Aakash Gandhi</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="motivating"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/they-said-i-cant.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1592002414452-3a8cec0e7a79?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVnb3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt="They Said I Can't"
+                />
+              </div>
+              <div class="music-title">
+                <span>They Said I Can't</span><br />
+                <span class="artist">David Fesliyan</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-instument"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/a melodious voice.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlJTIwaW50cnVtZW50fGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title"><span>A Melodious Voice</span></div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="motivating"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/rise-up.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1676497581000-763997b7c457?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmlzZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Rise Up</span><br />
+                <span class="artist">Steve Oxen</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/wistful-harp.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1519139270028-ab664cf42264?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG11c2ljYWwlMjBpbnN0cnVtZW50fGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Wistful Harp</span><br />
+                <span class="artist">Andrew Huang</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/grief-and-emptiness.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664373232551-32575df6820a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JpZWZ8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Grief and Emptiness</span><br />
+                <span class="artist">Steve Oxen</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="motivating"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/tears-of-joy.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhciUyMG9mJTIwam95fGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Tears of Joy</span><br />
+                <span class="artist">David Fesliyan</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Aakash Gandhi - Falling Snow.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1661255470705-db210b06a5c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c25vdyUyMGZhbGxpbmd8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Falling Snow</span><br />
+                <span class="artist">Aakash Gandhi</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="motivating"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/journey-to-the-promise.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5leXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Journey to the Promise</span><br />
+                <span class="artist">David Fesliyan</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Aakash Gandhi - Lifting Dreams.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1520948013839-62020f374478?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlmdGluZyUyMGRyZWFtc3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Lifting Dreams</span><br />
+                <span class="artist">Aakash Gandhi</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-melodies"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/forest sound.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Zm9yZXN0fGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title"><span>Forest Sounds </span><br /></div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Aakash Gandhi - Heavenly.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1576005391034-242dd8f40823?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhdmVufGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Heavenly</span><br />
+                <span class="artist">Aakash Gandhi</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="motivating"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/inspired-thinking.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1590421447070-b2f69f10ddc3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRoaW5raW5nfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Inspired Thinking</span><br />
+                <span class="artist">Steve Oxen</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-melodies"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/trees.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1667126447968-f02d4cb36114?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJlZXN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Underneath the Tree</span><br />
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-melodies"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/bioluminescent-waves.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1468931467769-06a09c69aad3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F2ZXN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Bioluminescent Waves</span><br />
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="instrumental"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Simple Sonata - Sir Cubworth.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664303032084-d227e176a339?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2ltcGxlJTIwc29uYXRhfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Simple Sonata</span><br />
+                <span class="artist">Sir Cubworth</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="classical"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Nocturne Op.9 No.2.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1676747629901-3f41c941d8fc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2ltcGxlJTIwc29uYXRhfGVufDB8fDB8fHw"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Nocturne Op.9 No.2</span><br />
+                <span class="artist">Chopin</span>
+              </div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="classical"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/pachabelly.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664303059325-0c1e6cb99100?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xhc3NpY2FsJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Pachabelly</span><br />
+                <span class="artist">Huma Huma</span>
+              </div>
+            </div>
+            <div class="music-content music-mobile-content" data-name="ambient">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/all-shall-end.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1709311418063-35661a7e3343?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>All Shall End</span><br />
+                <span class="artist">David Fesliyan</span>
+              </div>
+            </div>
+
+            <div class="music-content music-mobile-content" data-name="ambient">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/serenity.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1460036521480-ff49c08c2781?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG11c2ljfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Serenity</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+            <div class="music-content music-mobile-content" data-name="ambient">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/cathedral-ambience.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1526750925531-9e8fdbf95de3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW1iaWVudCUyMHVpc2N8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Cathedral Ambience</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+            <div class="music-content music-mobile-content" data-name="lofi">
+              <div class="music-img" id="play" data-sound="">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1669048780129-051d670fa2d1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9uZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Done With Work</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+
+            <div class="music-content music-mobile-content" data-name="lofi">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/vibes.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664300232761-acda76f11fbb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmliZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Vibes</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+
+            <div class="music-content music-mobile-content" data-name="lofi">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/looking-up.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1516384903227-139a8cf0ec21?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bG9va2luZyUyMHVwfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Looking Up</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+            <div class="music-content music-mobile-content" data-name="lofi">
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/mellow-thoughts.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1642511283397-e0bc9d502762?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bG9maXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title">
+                <span>Mellow Thoughts</span><br />
+                <span class="artist">David Renda</span>
+              </div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-instument"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Piano in the Rain.mp3"
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1673296664038-668b6506b8f0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpYW5vfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title"><span>Piano in the Rain</span></div>
+            </div>
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-instument"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Peace and Happy.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/uploads/1413395496082cbc91228/43e39040?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlYWNlfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+              <div class="music-title"><span>Peace and Happy</span></div>
+            </div>
+
+            <div
+              class="music-content music-mobile-content"
+              data-name="nature-instument"
+            >
+              <div
+                class="music-img"
+                id="play"
+                data-sound="./music-folder/Sad Winds.mp3"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1485286433112-1388205988c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FkJTIwd2luZHN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+              </div>
+              <div class="music-title"><span>Sad Winds</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="progress-container" class="progress-container">
+          <div id="progress" class="progress"></div>
+        </div>
+
+        <!-- Music Controls -->
+        <div class="controls" id="controls">
+          <button class="control-btn play" id="playBtn">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="control-btn pause" id="pauseBtn">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button class="control-btn" id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button class="control-btn" id="replayBtn">
+            <i class="fas fa-redo"></i>
+          </button>
+          <div class="volume-container">
+            <button class="control-btn" id="volume_icon">
+              <i class="fas fa-volume-up"></i>
+            </button>
+            <input type="range" id="volume" min="0" max="100" value="50" />
+            <span id="volume_show">50</span>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <nav class="mobile-b-nav">
+      <ul class="mobile-b-nav-links">
+        <a class="mobile-b-nav-link" href="./index.html">
+          <i class="fas fa-home mobile-b-icon mobile-b-active"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../MusicPage/index.html">
+          <i class="fas fa-music mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../ScenePage/index.html">
+          <i class="fas fa-mountain mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../RelaxPage/index.html">
+          <i class="fas fa-heartbeat mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../TalkPage/index.html">
+          <i class="fas fa-comments mobile-b-icon"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <script src="music.js"></script>
+  </body>
+</html>
