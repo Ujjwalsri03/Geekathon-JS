@@ -1,0 +1,24 @@
+#main-content {
+  display: flex;
+  padding: 10px;
+  margin-left: 250px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+/* Music Section Styles */
+#video-section {
+  flex: 1;
+  width: 100%;
+  margin-right: 20px;
+}
+
+#video-app{
+    padding: 5px;
+}
+
+.heading{
+    padding: 1rem;
+    background-color: #cacaca;
+    border-radius: 7px;
+}
