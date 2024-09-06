@@ -1,11 +1,11 @@
 window.addEventListener('load', () => {
     setTimeout(() => {
-      document.getElementById('loader').style.display = 'none';
-      document.querySelector('.form-container').style.display = 'block';
+        document.getElementById('loader').style.display = 'none';
+        document.querySelector('.form-container').style.display = 'block';
     }, 2000); 
-  });
+});
 
-  function toggleForms() {
+function toggleForms() {
     document.getElementById('sign-up-form').classList.toggle('hidden');
     document.getElementById('sign-in-form').classList.toggle('hidden');
 }
@@ -35,9 +35,7 @@ function signIn() {
 
     if (user && user.email === email && user.password === password) {
         alert(`Welcome back, ${user.name}!`);
-        
         document.querySelectorAll('#sign-in-form input, #sign-in-form div, .toggle-link, #sign').forEach(el => el.classList.add('hidden'));
-    
         document.getElementById('redirect-link').classList.remove('hidden');
     } else {
         alert('Incorrect email or password. Please try again.');

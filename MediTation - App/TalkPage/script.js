@@ -1,3 +1,23 @@
+window.addEventListener('load', () => {
+    const user = JSON.parse(localStorage.getItem('user'));
+  const signupBtn = document.querySelector('.signup-btn');
+
+  if (user && user.name) {
+      signupBtn.textContent = `Hi  ${user.name}`;
+  } else {
+      alert('Please sign up to access more features!');
+  }
+    setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.querySelector('#main-content').style.display = 'block';
+    }, 2000);
+});
+
+document.getElementById('menuIcon').addEventListener('click', function() {
+    const sideNavbar = document.getElementById('sideNavbar');
+    sideNavbar.classList.toggle('open');
+});
+
 const typingForm = document.querySelector(".typing-form");
 const chatList = document.querySelector(".chat-list");
 const toggleTheme = document.querySelector("#toggle-theme")
@@ -74,7 +94,7 @@ const showTypingEffect = (text, textElement) => {
 
 const showLoadingAnimation = ()=>{
     const html = ` <div class="message-content">
-          <img src="" alt="gemini" class="avatar" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s" alt="gemini" class="avatar" />
           <p class="text"></p>
           <div class="loading-indicator">
             <div class="loading-bar"></div>
@@ -94,7 +114,7 @@ const handleOutgoingChat = () => {
     if (!userMessage) return;
 
     const html = ` <div class="message-content">
-          <img src="" alt="user" class="avatar" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvmnrfrTilGGMvu33dOi7OiFDffNiZED2dQ&s" alt="user" class="avatar" />
           <p class="text"></p>
         </div> `
 
