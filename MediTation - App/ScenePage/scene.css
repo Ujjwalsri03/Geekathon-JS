@@ -1,24 +1,144 @@
 #main-content {
   display: flex;
-  padding: 10px;
+  padding: 5px 0px;
   margin-left: 250px;
   margin-top: 70px;
   flex-wrap: wrap;
 }
 
-/* Music Section Styles */
 #video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   width: 100%;
   margin-right: 20px;
 }
 
-#video-app{
-    padding: 5px;
+#video-app {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  margin-right: 10px;
 }
 
-.heading{
-    padding: 1rem;
-    background-color: #cacaca;
-    border-radius: 7px;
+.heading {
+  padding: 1rem;
+  background-color: #cacaca;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding-left: 0.5rem;
+  justify-content: center;
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  max-height: 250px;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+.video-item .video {
+  width: 335px;
+  height: 300px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Video options styling */
+
+.video-options {
+    padding: 10px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    width: 100%;
+    display: none; 
+    opacity: 0.9;
+    z-index: 1000; 
+    transition: display 0.3s ease;
+}
+
+#toggleButton {
+    background-color: transparent;
+    border: none;
+    color: #ff0000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1001; 
+    position: absolute;
+    top: -30px; 
+    left: 10px; 
+}
+
+/* Adjust button size for better UX */
+.duration-btn {
+    background-color: #1a4600;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.duration-btn:hover {
+    background-color: #2563eb;
+}
+
+.video-item:hover .video-options {
+    display: flex;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  #main-content {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  #video-app {
+    padding: 0px 5px;
+  }
+  .video-item .video {
+    max-height: 200px;
+  }
+
+  .duration-btn {
+    padding: 6px 10px;
+  }
+  .videos{
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .duration-btn {
+    padding: 5px 8px;
+  }
+
+
 }

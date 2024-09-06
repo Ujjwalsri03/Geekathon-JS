@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U Matter | Scene</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../commonPart/navbar.css" />
+    <link rel="stylesheet" href="relax.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <img
+        src="../HomePage/image/Spinner@1x-1.0s-200px-200px.gif"
+        alt="Loading..."
+      />
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+      <div class="top-navbar">
+        <div class="logo">
+          <img src="../HomePage/image/logo.svg" alt="Logo" />
+        </div>
+        <div class="navbar-right">
+          <a href="./form/signupform.html">
+            <button class="signup-btn">Sign Up</button>
+          </a>
+          <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Side Navigation Bar -->
+    <aside>
+      <div class="side-navbar" id="sideNavbar">
+        <ul class="nav-links">
+          <li>
+            <a href="../HomePage/index.html" class="nav-link">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li>
+            <a href="../MusicPage/index.html" class="nav-link">
+              <i class="fas fa-music"></i> Music
+            </a>
+          </li>
+          <li>
+            <a href="../ScenePage/index.html" class="nav-link">
+              <i class="fas fa-mountain"></i> Scene
+            </a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link active">
+              <i class="fas fa-heartbeat"></i> Relax & Breathe
+            </a>
+          </li>
+          <li>
+            <a href="../TalkPage/index.html" class="nav-link">
+              <i class="fas fa-comments"></i> Talk To Hope
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <h1 class="heading">Relax & Breathe</h1>
+      <div class="relax-card-container">
+        <!-- Deep Breathing Card -->
+        <div class="relax-card deep-breathing">
+          <h2 class="relax-card-title">Deep Breathing</h2>
+          <p class="relax-description">
+            Deep breathing is one of the best ways<br> to relax  and let your worries
+            go.
+          </p>
+          <a
+            href="https://www.healthline.com/health/diaphragmatic-breathing#"
+            class="read-more"
+            >Read More</a
+          >
+          <a href="../RelaxPage/breathing/index.html">
+            <button class="selectBtn start-relax">Begin</button>
+          </a>
+        </div>
+
+        <!-- 4-7-8 Technique Card -->
+        <div class="relax-card four-seven-eight">
+          <h2 class="relax-card-title">4-7-8 Technique</h2>
+          <p class="relax-description">
+            The 4-7-8 technique forces the mind and <br> body to focus on regulating
+            the breath.
+          </p>
+          <a
+            href="https://www.healthline.com/health/4-7-8-breathing"
+            target="_blank"
+            class="read-more"
+            >Read More</a
+          >
+
+          <a href=" ">
+            <button class="selectBtn start-relax">Begin</button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-b-nav">
+      <ul class="mobile-b-nav-links">
+        <a class="mobile-b-nav-link" href="../HomePage/index.html">
+          <i class="fas fa-home mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../MusicPage/index.html">
+          <i class="fas fa-music mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../ScenePage/index.html">
+          <i class="fas fa-mountain mobile-b-icon"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="./index.html">
+          <i class="fas fa-heartbeat mobile-b-icon mobile-b-active"></i>
+        </a>
+        <a class="mobile-b-nav-link" href="../TalkPage/index.html">
+          <i class="fas fa-comments mobile-b-icon"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="../commonPart/nav.js"></script>
+    <script src="relax.js"></script>
+  </body>
+</html>

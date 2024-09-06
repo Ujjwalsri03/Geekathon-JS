@@ -98,6 +98,10 @@
   margin: 0;
 }
 
+.nav-link i {
+  margin-right: 10px;
+}
+
 .nav-link {
   display: block;
   padding: 20px 20px;
@@ -110,15 +114,17 @@
   transition: all 0.5s ease-in-out;
 }
 
-.nav-link i {
-  margin-right: 10px;
-}
-
-.nav-link.active,
 .nav-link:hover {
   background: linear-gradient(120deg, #c4dad2, #6a9c89);
   color: #0b0b0b;
 }
+
+.active {
+  background: linear-gradient(120deg, #c4dad2, #6a9c89);
+  color: #0b0b0b;
+}
+
+/* ... existing code ... */
 
 /* Mobile Bottom Navigation */
 .mobile-b-nav {
