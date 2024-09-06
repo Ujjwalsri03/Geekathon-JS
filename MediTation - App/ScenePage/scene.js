@@ -46,7 +46,7 @@ function displayVideos(videos) {
         const videoElement = document.createElement('div');
         videoElement.classList.add('video-item');
         videoElement.innerHTML = `
-            <video src="${video.video_files[0].link}" class="video" controls></video>
+            <video src="${video.video_files[0].link}" class="video" controls loop></video>
             <div class="video-options">
                 <button class="duration-btn" data-duration="120">2 Min</button>
                 <button class="duration-btn" data-duration="300">5 Min</button>
@@ -118,7 +118,7 @@ function playVideo(video, duration) {
         if (document.fullscreenElement) {
             document.exitFullscreen();
         }
-    }, duration * 10000);
+    }, duration * 1000);
 }
 
 fetchVideos();

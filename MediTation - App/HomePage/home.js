@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
   if (user && user.name) {
       signupBtn.textContent = `Hi ${user.name}`;
   } else {
+
       alert('Please sign up to access more features!');
   }
     setTimeout(() => {
