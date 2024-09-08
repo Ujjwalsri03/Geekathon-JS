@@ -132,3 +132,17 @@ const closeBtn = document.getElementById('close');
     musicContainer.style.display = 'none';
     controls.style.display = 'none'; 
   });
+
+function filterSongs(category) {
+  const allSongs = document.querySelectorAll('.music-box');
+
+  allSongs.forEach(song => {
+    const songCategory = song.querySelector('.music-content').getAttribute('data-name');
+
+    if (category === 'all' || songCategory.includes(category)) {
+      song.style.display = 'flex'; // Show song
+    } else {
+      song.style.display = 'none'; // Hide song
+    }
+  });
+}
